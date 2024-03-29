@@ -1,0 +1,19 @@
+includes:
+    - ./vendor/larastan/larastan/extension.neon
+    - ./vendor/calebdw/larastan-livewire/extension.neon
+    - ./phpstan-baseline.neon
+parameters:
+    paths:
+        - app
+        - bootstrap
+        - config
+        - database
+        - lang
+        - public
+        - resources
+        - routes
+    excludePaths:
+        - app/Helpers/Markdown
+        - app/Helpers/MarkdownExtra
+    level: 7
+    checkOctaneCompatibility: true
